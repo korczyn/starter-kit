@@ -19,6 +19,11 @@ public class BookServiceImpl implements BookService {
     private BookRepository bookRepository;
 
     @Override
+    public void deleteBook(String bookTitle){
+    	bookRepository.deleteBookByTitle(bookTitle);
+    }
+    
+    @Override
     public List<BookTo> findAllBooks() {
         return BookMapper.map2To(bookRepository.findAll());
     }

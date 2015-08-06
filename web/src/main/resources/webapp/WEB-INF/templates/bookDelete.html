@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head lang="en">
+<meta charset="UTF-8" />
+<title>Book deleted</title>
+<link rel="stylesheet" th:href="@{/static/bookDelete.css}" href="/static/bookDelete.css" />
+</head>
+<body>
+	<p class="para">
+		<span>Book with title: "</span>
+		<span th:text="${books}">id</span> 
+		<span>" has been removed from library</span>
+	</p>
+	<p>
+		<a href="http://localhost:9721/workshop/books">Back to book list</a>
+	</p>
+	 
+</body>
+		<meta http-equiv="refresh" content="2;url=http://localhost:9721/workshop/books" />
+</html>

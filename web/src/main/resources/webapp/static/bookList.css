@@ -1,0 +1,44 @@
+body{
+	background-image: url("http://fbcrobinson.org/wp-content/uploads/2013/05/abstract-blue-white-background.jpg");	
+	background-repeat: no-repeat;
+}
+
+table{
+	table-layout: auto;
+	border: 1px solid black;
+	font-style: italic;
+	text-align: center;
+}
+
+.bookId{
+	width: 75px;
+	font-family: fantasy;
+}
+
+.bookTitle{
+	width: 400px;
+	font-family: fantasy;
+}
+
+.bookAuthors{
+	width: 200px;
+	font-family: fantasy;
+}
+
+tr:nth-child(odd){
+	 background-color: #c0c0c0;
+}
+
+tr:nth-child(even){
+	 background-color: #ffffff;
+}
+
+a:link, a:visited {
+    display: inline-block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff0000;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+}
