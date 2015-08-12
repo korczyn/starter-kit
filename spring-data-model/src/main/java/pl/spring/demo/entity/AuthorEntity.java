@@ -1,4 +1,4 @@
-package pl.spring.demo.entity;
+package src.main.java.pl.spring.demo.entity;
 
 import javax.persistence.*;
 
