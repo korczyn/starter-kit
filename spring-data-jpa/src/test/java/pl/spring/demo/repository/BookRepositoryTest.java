@@ -28,42 +28,42 @@ public class BookRepositoryTest {
         BookEntity bookEntity = bookRepository.findOne(bookId);
         // then
         assertNotNull(bookEntity);
-        assertEquals("Pierwsza książka", bookEntity.getTitle());
+        assertEquals("Roundhouse Kick", bookEntity.getTitle());
     }
 
     @Test
     public void testShouldFindBooksByTitle() {
         // given
-        final String bookTitle = "p";
+        final String bookTitle = "r";
         // when
         List<BookEntity> booksEntity = bookRepository.findBookByTitle(bookTitle);
         // then
         assertNotNull(booksEntity);
         assertFalse(booksEntity.isEmpty());
-        assertEquals("Pierwsza książka", booksEntity.get(0).getTitle());
+        assertEquals("Roundhouse Kick", booksEntity.get(0).getTitle());
     }
 
     @Test
     public void testShouldFindBooksByAuthorFirstName() {
         // given
-        final String author = "jan";
+        final String author = "mislav";
         // when
         List<BookEntity> booksEntity = bookRepository.findBookByAuthor(author);
         // then
         assertNotNull(booksEntity);
         assertFalse(booksEntity.isEmpty());
-        assertEquals("Pierwsza książka", booksEntity.get(0).getTitle());
+        assertEquals("Roundhouse Kick", booksEntity.get(0).getTitle());
     }
 
     @Test
     public void testShouldFindBooksByAuthorLastName() {
         // given
-        final String author = "kowalski";
+        final String author = "gospod";
         // when
         List<BookEntity> booksEntity = bookRepository.findBookByAuthor(author);
         // then
         assertNotNull(booksEntity);
         assertFalse(booksEntity.isEmpty());
-        assertEquals("Pierwsza książka", booksEntity.get(0).getTitle());
+        assertEquals("Roundhouse Kick", booksEntity.get(0).getTitle());
     }
 }

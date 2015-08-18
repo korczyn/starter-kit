@@ -12,7 +12,8 @@ public class BookMapper {
 
     public static BookTo map(BookEntity bookEntity) {
         if (bookEntity != null) {
-            return new BookTo(bookEntity.getId(), bookEntity.getTitle(), mapAuthors(bookEntity.getAuthors()));
+//            return new BookTo(bookEntity.getId(), bookEntity.getTitle(), mapAuthors(bookEntity.getAuthors()), bookEntity.getLibrary().getName());
+            return new BookTo(bookEntity.getId(), bookEntity.getTitle(), mapAuthors(bookEntity.getAuthors()), bookEntity.getLibrary().getName());
         }
         return null;
     }

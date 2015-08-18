@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Ksiazki wedlug kryteriow</title>
+<link rel="stylesheet" th:href="@{/static/bookList.css}"
+	href="/static/bookList.css" />
+</head>
+<body>
+    <table>
+	<tr th:each="book : ${books}">
+		<td class="bookId" th:text="${book.id}">id></td>
+		<td class="bookTitle" th:text="${book.title}">title</td>
+		<td class="bookAuthors" th:text="${book.authors}">authors</td> 
+		<td class="bookLib" th:text="${book.libName}">libName</td> 
+			</tr>
+	</table>
+</body>
+</html>

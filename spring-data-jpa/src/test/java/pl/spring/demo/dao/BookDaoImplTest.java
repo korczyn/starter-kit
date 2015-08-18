@@ -28,18 +28,18 @@ public class BookDaoImplTest {
         BookEntity bookEntity = bookDao.findOne(bookId);
         // then
         assertNotNull(bookEntity);
-        assertEquals("Pierwsza książka", bookEntity.getTitle());
+        assertEquals("Roundhouse Kick", bookEntity.getTitle());
     }
 
     @Test
     public void testShouldFindBooksByTitle() {
         // given
-        final String bookTitle = "p";
+        final String bookTitle = "r";
         // when
         List<BookEntity> booksEntity = bookDao.findBookByTitle(bookTitle);
         // then
         assertNotNull(booksEntity);
         assertFalse(booksEntity.isEmpty());
-        assertEquals("Pierwsza książka", booksEntity.get(0).getTitle());
+        assertEquals("Roundhouse Kick", booksEntity.get(0).getTitle());
     }
 }

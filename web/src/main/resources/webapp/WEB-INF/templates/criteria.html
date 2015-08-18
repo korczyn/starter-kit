@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head lang="en">
+<meta charset="UTF-8" />
+<title>eBiblioteka</title>
+</head>
+<body>
+	<form action="byCrit" method="get">
+		<table>
+			<tr>
+				<td>Title:</td>
+				<td><input type="text" name="t"></input><br></br></td>
+			</tr>
+			<tr>
+				<td>Author:</td>
+				<td><input type="text" name="a"></input><br></br></td>
+			</tr>
+			<tr>
+				<td>Library:</td>
+				<td><input type="text" name="l"></input><br></br></td>
+			</tr>
+			<tr>
+				<td>
+					<button type="submit">Find Book</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<form>
+	================================================================
+	</form>
+	<form action="libDelete">
+		Library ID:
+		<input type="text" name="id"></input>
+		<button type="submit">Delete library</button>
+	</form>
+	<form>
+	================================================================
+	</form>
+	<form action="libByName">
+		Library name:
+		<input type="text" name="name"></input>
+		<button type="submit">Find Library</button>
+	</form>
+	<form>
+	================================================================
+	</form>
+	<input type="button" onclick="location.href='http://localhost:9721/workshop/books';" value="Show all books" />
+	<input type="button" onclick="location.href='http://localhost:9721/workshop/libs';" value="Show all libs" />
+</body>
+</html>
