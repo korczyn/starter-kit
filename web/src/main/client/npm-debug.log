@@ -1,0 +1,342 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose readDependencies loading dependencies from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\package.json
+5 warn package.json oasp-js-sample@0.0.1 No repository field.
+6 warn package.json oasp-js-sample@0.0.1 No README data
+7 warn package.json oasp-js-sample@0.0.1 No license field.
+8 verbose install where, deps [ 'C:\\Users\\mkorczyn\\GitProjects\\starter-kit\\web\\src\\main\\client',
+8 verbose install   [ 'connect',
+8 verbose install     'browser-sync',
+8 verbose install     'chalk',
+8 verbose install     'coveralls',
+8 verbose install     'del',
+8 verbose install     'gulp',
+8 verbose install     'gulp-concat',
+8 verbose install     'gulp-filter',
+8 verbose install     'gulp-flatten',
+8 verbose install     'gulp-git',
+8 verbose install     'gulp-if',
+8 verbose install     'gulp-imagemin',
+8 verbose install     'gulp-inject',
+8 verbose install     'gulp-insert',
+8 verbose install     'gulp-jshint',
+8 verbose install     'gulp-karma',
+8 verbose install     'gulp-less',
+8 verbose install     'gulp-load-plugins',
+8 verbose install     'gulp-minify-css',
+8 verbose install     'gulp-minify-html',
+8 verbose install     'gulp-newer',
+8 verbose install     'gulp-ng-annotate',
+8 verbose install     'gulp-ng-templates',
+8 verbose install     'gulp-processhtml',
+8 verbose install     'gulp-protractor',
+8 verbose install     'gulp-replace',
+8 verbose install     'gulp-rev',
+8 verbose install     'gulp-size',
+8 verbose install     'gulp-sonar',
+8 verbose install     'gulp-sourcemaps',
+8 verbose install     'gulp-sync',
+8 verbose install     'gulp-uglify',
+8 verbose install     'gulp-usemin',
+8 verbose install     'gulp-util',
+8 verbose install     'gulp.spritesmith',
+8 verbose install     'http-proxy',
+8 verbose install     'jasmine-core',
+8 verbose install     'jshint-stylish',
+8 verbose install     'karma',
+8 verbose install     'karma-chrome-launcher',
+8 verbose install     'karma-coverage',
+8 verbose install     'karma-jasmine',
+8 verbose install     'karma-junit-reporter',
+8 verbose install     'karma-phantomjs-launcher',
+8 verbose install     'lodash',
+8 verbose install     'main-bower-files',
+8 verbose install     'phantomjs',
+8 verbose install     'protractor',
+8 verbose install     'require-dir',
+8 verbose install     'string',
+8 verbose install     'through2',
+8 verbose install     'uglify-save-license',
+8 verbose install     'wiredep',
+8 verbose install     'yargs' ] ]
+9 verbose install where, peers [ 'C:\\Users\\mkorczyn\\GitProjects\\starter-kit\\web\\src\\main\\client',
+9 verbose install   [] ]
+10 verbose installManyTop reading for lifecycle C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\package.json
+11 info preinstall oasp-js-sample@0.0.1
+12 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\browser-sync\package.json
+13 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\chalk\package.json
+14 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\connect\package.json
+15 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\coveralls\package.json
+16 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\del\package.json
+17 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp\package.json
+18 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-concat\package.json
+19 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-filter\package.json
+20 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-flatten\package.json
+21 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-git\package.json
+22 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-if\package.json
+23 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-imagemin\package.json
+24 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-inject\package.json
+25 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-insert\package.json
+26 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-jshint\package.json
+27 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-karma\package.json
+28 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-less\package.json
+29 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-load-plugins\package.json
+30 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-minify-css\package.json
+31 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-minify-html\package.json
+32 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-newer\package.json
+33 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-ng-annotate\package.json
+34 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-ng-templates\package.json
+35 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-processhtml\package.json
+36 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-protractor\package.json
+37 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-replace\package.json
+38 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-rev\package.json
+39 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-size\package.json
+40 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-sonar\package.json
+41 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-sourcemaps\package.json
+42 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-sync\package.json
+43 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-uglify\package.json
+44 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-usemin\package.json
+45 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-util\package.json
+46 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp.spritesmith\package.json
+47 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\http-proxy\package.json
+48 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\jasmine-core\package.json
+49 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\jshint-stylish\package.json
+50 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\karma\package.json
+51 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\karma-chrome-launcher\package.json
+52 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\karma-coverage\package.json
+53 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\karma-jasmine\package.json
+54 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\karma-junit-reporter\package.json
+55 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\karma-phantomjs-launcher\package.json
+56 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\lodash\package.json
+57 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\main-bower-files\package.json
+58 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\phantomjs\package.json
+59 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\protractor\package.json
+60 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\require-dir\package.json
+61 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\string\package.json
+62 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\through2\package.json
+63 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\uglify-save-license\package.json
+64 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\wiredep\package.json
+65 verbose installManyTop reading scoped package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\yargs\package.json
+66 info package.json coveralls@2.11.2 license should be a valid SPDX license expression
+67 info package.json gulp-if@1.2.5 No license field.
+68 info package.json gulp-inject@1.3.1 No license field.
+69 info package.json gulp-ng-annotate@1.0.0 license should be a valid SPDX license expression
+70 info package.json gulp-minify-html@1.0.3 No license field.
+71 info package.json gulp-protractor@1.0.0 No license field.
+72 info package.json gulp-sonar@1.0.3 No license field.
+73 info package.json phantomjs@1.9.17 No license field.
+74 info package.json uglify-save-license@0.4.1 No license field.
+75 info package.json wiredep@2.2.2 No license field.
+76 verbose readDependencies loading dependencies from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\package.json
+77 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\browser-sync\package.json
+78 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\chalk\package.json
+79 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\connect\package.json
+80 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\coveralls\package.json
+81 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\del\package.json
+82 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp\package.json
+83 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-concat\package.json
+84 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-filter\package.json
+85 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-flatten\package.json
+86 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-git\package.json
+87 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-if\package.json
+88 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-imagemin\package.json
+89 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-inject\package.json
+90 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-insert\package.json
+91 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-jshint\package.json
+92 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-karma\package.json
+93 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-less\package.json
+94 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-load-plugins\package.json
+95 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-minify-css\package.json
+96 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-minify-html\package.json
+97 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-newer\package.json
+98 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-ng-annotate\package.json
+99 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-ng-templates\package.json
+100 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-processhtml\package.json
+101 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-protractor\package.json
+102 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-replace\package.json
+103 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-rev\package.json
+104 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-size\package.json
+105 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-sonar\package.json
+106 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-sourcemaps\package.json
+107 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-sync\package.json
+108 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-uglify\package.json
+109 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-usemin\package.json
+110 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp-util\package.json
+111 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\gulp.spritesmith\package.json
+112 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\http-proxy\package.json
+113 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\jasmine-core\package.json
+114 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\jshint-stylish\package.json
+115 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\karma\package.json
+116 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\karma-chrome-launcher\package.json
+117 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\karma-coverage\package.json
+118 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\karma-jasmine\package.json
+119 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\karma-junit-reporter\package.json
+120 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\karma-phantomjs-launcher\package.json
+121 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\lodash\package.json
+122 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\main-bower-files\package.json
+123 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\phantomjs\package.json
+124 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\protractor\package.json
+125 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\require-dir\package.json
+126 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\string\package.json
+127 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\through2\package.json
+128 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\uglify-save-license\package.json
+129 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\wiredep\package.json
+130 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\yargs\package.json
+131 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\.bin\coveralls\package.json
+132 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\.bin\coveralls.cmd\package.json
+133 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\.bin\gulp\package.json
+134 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\.bin\gulp.cmd\package.json
+135 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\.bin\phantomjs\package.json
+136 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\.bin\phantomjs.cmd\package.json
+137 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\.bin\wiredep\package.json
+138 verbose targetResolver reading package data from C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client\node_modules\.bin\wiredep.cmd\package.json
+139 verbose already installed skipping gulp-inject@1.3.1 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+140 verbose already installed skipping gulp-insert@0.4.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+141 verbose already installed skipping gulp-jshint@1.11.2 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+142 verbose already installed skipping gulp-karma@0.0.4 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+143 verbose already installed skipping gulp-less@3.0.3 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+144 verbose already installed skipping gulp-load-plugins@0.10.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+145 verbose already installed skipping gulp-minify-css@1.2.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+146 verbose already installed skipping gulp-minify-html@1.0.3 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+147 verbose already installed skipping gulp-newer@0.5.1 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+148 verbose already installed skipping gulp-ng-annotate@1.0.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+149 verbose already installed skipping gulp-ng-templates@0.0.6 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+150 verbose already installed skipping gulp-processhtml@1.1.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+151 verbose already installed skipping gulp-protractor@1.0.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+152 verbose already installed skipping gulp-replace@0.5.3 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+153 verbose already installed skipping gulp-rev@5.1.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+154 verbose already installed skipping gulp-size@1.2.3 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+155 verbose already installed skipping gulp-sonar@1.0.3 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+156 verbose already installed skipping gulp-sourcemaps@1.5.2 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+157 verbose already installed skipping gulp-sync@0.1.4 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+158 verbose already installed skipping gulp-uglify@1.2.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+159 verbose already installed skipping gulp-usemin@0.3.11 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+160 verbose already installed skipping gulp-util@3.0.6 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+161 verbose already installed skipping gulp.spritesmith@3.8.2 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+162 verbose already installed skipping http-proxy@1.11.1 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+163 verbose already installed skipping jasmine-core@2.3.4 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+164 verbose already installed skipping jshint-stylish@2.0.1 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+165 verbose already installed skipping karma@0.12.37 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+166 verbose already installed skipping karma-chrome-launcher@0.2.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+167 verbose already installed skipping karma-coverage@0.4.2 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+168 verbose already installed skipping karma-jasmine@0.3.6 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+169 verbose already installed skipping karma-junit-reporter@0.3.1 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+170 verbose already installed skipping karma-phantomjs-launcher@0.2.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+171 verbose already installed skipping lodash@3.10.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+172 verbose already installed skipping main-bower-files@2.9.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+173 verbose already installed skipping phantomjs@1.9.17 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+174 verbose already installed skipping protractor@2.1.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+175 verbose already installed skipping require-dir@0.3.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+176 verbose already installed skipping string@3.3.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+177 verbose already installed skipping through2@2.0.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+178 verbose already installed skipping uglify-save-license@0.4.1 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+179 verbose already installed skipping wiredep@2.2.2 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+180 verbose already installed skipping yargs@3.15.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+181 verbose already installed skipping connect@3.4.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+182 verbose already installed skipping browser-sync@2.7.13 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+183 verbose already installed skipping chalk@1.1.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+184 verbose already installed skipping coveralls@2.11.2 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+185 verbose already installed skipping del@1.2.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+186 verbose already installed skipping gulp@3.9.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+187 verbose already installed skipping gulp-concat@2.6.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+188 verbose already installed skipping gulp-filter@2.0.2 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+189 verbose already installed skipping gulp-flatten@0.1.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+190 verbose already installed skipping gulp-git@1.2.4 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+191 verbose already installed skipping gulp-if@1.2.5 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+192 verbose already installed skipping gulp-imagemin@2.3.0 C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+193 silly install resolved []
+194 info build C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+195 info linkStuff oasp-js-sample@0.0.1
+196 silly linkStuff oasp-js-sample@0.0.1 has C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main as its parent node_modules
+197 verbose linkBins oasp-js-sample@0.0.1
+198 verbose linkMans oasp-js-sample@0.0.1
+199 verbose rebuildBundles oasp-js-sample@0.0.1
+200 verbose rebuildBundles [ '.bin',
+200 verbose rebuildBundles   'browser-sync',
+200 verbose rebuildBundles   'chalk',
+200 verbose rebuildBundles   'connect',
+200 verbose rebuildBundles   'coveralls',
+200 verbose rebuildBundles   'del',
+200 verbose rebuildBundles   'gulp',
+200 verbose rebuildBundles   'gulp-concat',
+200 verbose rebuildBundles   'gulp-filter',
+200 verbose rebuildBundles   'gulp-flatten',
+200 verbose rebuildBundles   'gulp-git',
+200 verbose rebuildBundles   'gulp-if',
+200 verbose rebuildBundles   'gulp-imagemin',
+200 verbose rebuildBundles   'gulp-inject',
+200 verbose rebuildBundles   'gulp-insert',
+200 verbose rebuildBundles   'gulp-jshint',
+200 verbose rebuildBundles   'gulp-karma',
+200 verbose rebuildBundles   'gulp-less',
+200 verbose rebuildBundles   'gulp-load-plugins',
+200 verbose rebuildBundles   'gulp-minify-css',
+200 verbose rebuildBundles   'gulp-minify-html',
+200 verbose rebuildBundles   'gulp-newer',
+200 verbose rebuildBundles   'gulp-ng-annotate',
+200 verbose rebuildBundles   'gulp-ng-templates',
+200 verbose rebuildBundles   'gulp-processhtml',
+200 verbose rebuildBundles   'gulp-protractor',
+200 verbose rebuildBundles   'gulp-replace',
+200 verbose rebuildBundles   'gulp-rev',
+200 verbose rebuildBundles   'gulp-size',
+200 verbose rebuildBundles   'gulp-sonar',
+200 verbose rebuildBundles   'gulp-sourcemaps',
+200 verbose rebuildBundles   'gulp-sync',
+200 verbose rebuildBundles   'gulp-uglify',
+200 verbose rebuildBundles   'gulp-usemin',
+200 verbose rebuildBundles   'gulp-util',
+200 verbose rebuildBundles   'gulp.spritesmith',
+200 verbose rebuildBundles   'http-proxy',
+200 verbose rebuildBundles   'jasmine-core',
+200 verbose rebuildBundles   'jshint-stylish',
+200 verbose rebuildBundles   'karma',
+200 verbose rebuildBundles   'karma-chrome-launcher',
+200 verbose rebuildBundles   'karma-coverage',
+200 verbose rebuildBundles   'karma-jasmine',
+200 verbose rebuildBundles   'karma-junit-reporter',
+200 verbose rebuildBundles   'karma-phantomjs-launcher',
+200 verbose rebuildBundles   'lodash',
+200 verbose rebuildBundles   'main-bower-files',
+200 verbose rebuildBundles   'phantomjs',
+200 verbose rebuildBundles   'protractor',
+200 verbose rebuildBundles   'require-dir',
+200 verbose rebuildBundles   'string',
+200 verbose rebuildBundles   'through2',
+200 verbose rebuildBundles   'uglify-save-license',
+200 verbose rebuildBundles   'wiredep',
+200 verbose rebuildBundles   'yargs' ]
+201 info install oasp-js-sample@0.0.1
+202 info postinstall oasp-js-sample@0.0.1
+203 verbose unsafe-perm in lifecycle true
+204 info oasp-js-sample@0.0.1 Failed to exec postinstall script
+205 verbose stack Error: oasp-js-sample@0.0.1 postinstall: `bower install -F`
+205 verbose stack Exit status 1
+205 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+205 verbose stack     at EventEmitter.emit (events.js:110:17)
+205 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+205 verbose stack     at ChildProcess.emit (events.js:110:17)
+205 verbose stack     at maybeClose (child_process.js:1015:16)
+205 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+206 verbose pkgid oasp-js-sample@0.0.1
+207 verbose cwd C:\Users\mkorczyn\GitProjects\starter-kit\web\src\main\client
+208 error Windows_NT 6.1.7601
+209 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+210 error node v0.12.7
+211 error npm  v2.11.3
+212 error code ELIFECYCLE
+213 error oasp-js-sample@0.0.1 postinstall: `bower install -F`
+213 error Exit status 1
+214 error Failed at the oasp-js-sample@0.0.1 postinstall script 'bower install -F'.
+214 error This is most likely a problem with the oasp-js-sample package,
+214 error not with npm itself.
+214 error Tell the author that this fails on your system:
+214 error     bower install -F
+214 error You can get their info via:
+214 error     npm owner ls oasp-js-sample
+214 error There is likely additional logging output above.
+215 verbose exit [ 1, true ]

@@ -27,6 +27,11 @@ public class BookRestService {
         return bookService.saveBook(book);
     }
 
+    @RequestMapping(value = "/bookch/{id}/{newTitle}", method = RequestMethod.POST)
+    public void changeBookTitle(@PathVariable("id") Long id, @PathVariable("newTitle") String newTitle){
+    	bookService.changeBookTitle(id, newTitle);
+    }
+    
     @RequestMapping(value = "/book/{id}", method = RequestMethod.DELETE)
     public void deleteBook(@PathVariable("id") long id) {
         bookService.deleteBook(id);
