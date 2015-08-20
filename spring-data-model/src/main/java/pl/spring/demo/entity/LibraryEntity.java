@@ -25,7 +25,7 @@ public class LibraryEntity {
 	
 	@OneToMany(
 			cascade = CascadeType.ALL,
-			fetch = FetchType.EAGER
+			fetch = FetchType.LAZY
 			,mappedBy = "library"
 			)
 //	@JoinColumn(name = "lib_id")

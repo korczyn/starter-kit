@@ -20,7 +20,7 @@ public class BookRepositoryImpl implements MyBookRepository{
 	private EntityManager entityManager;
 
 	@Override
-	public List<BookEntity> findBook(BookSearchCriteria crit) {
+	public List<BookEntity> findBooksBySearchCriteria(BookSearchCriteria crit) {
 		QBookEntity bookEntity = QBookEntity.bookEntity;
 		JPAQuery query = new JPAQuery (entityManager);
 		BooleanBuilder builder = new BooleanBuilder();

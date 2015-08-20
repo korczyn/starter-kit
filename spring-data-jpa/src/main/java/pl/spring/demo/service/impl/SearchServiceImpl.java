@@ -22,7 +22,7 @@ public class SearchServiceImpl implements SearchService{
 	
 	@Override
 	public List<BookTo> findBook(BookSearchCriteria crit) {
-		return BookMapper.map2To( bookRepository.findBook(crit));
+		return BookMapper.map2To( bookRepository.findBooksBySearchCriteria(crit));
 	}
 
 }

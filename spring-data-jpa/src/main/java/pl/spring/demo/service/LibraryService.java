@@ -2,10 +2,10 @@ package pl.spring.demo.service;
 
 import java.util.List;
 
-import pl.spring.demo.entity.LibraryEntity;
+import pl.spring.demo.to.LibraryTo;
 
 public interface LibraryService {
-	List<LibraryEntity> findAllLibs();
-	List<LibraryEntity> findLibraryByName(String name);
+	List<LibraryTo> findAllLibs();
+	List<LibraryTo> findLibraryByName(String name);
 	void deleteLibrary(Long id);
 }
