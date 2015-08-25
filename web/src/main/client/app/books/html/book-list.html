@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html>
 <body>
-<section>
-    <div flash-message="5000" ></div>
+	<section>
+		<div flash-message="5000"></div>
 
-    <p>Podaj tytuł książki:</p>
-    <input type="text" ng-model="prefix">
-    <button ng-click="search()">Szukaj</button>
-    <button ng-click="addBook()">Dodaj książkę</button>
+		<p>Type book title:</p>
+		<input type="text" ng-model="prefix">
+		<button ng-click="search(prefix)">
+			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			Find Book
+		</button>
+		<button ng-click="addBook()">
+			<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add
+			Book
+		</button>
 
-    <table>
-        <tr>
-            <th>Tytuł</th>
-            <th>Autorzy</th>
-            <th>Usuń</th>
-            <th>Pszycisg</th>
-        </tr>
-        <tr ng-repeat="book in books">
-            <td>{{ book.title }}</td>
-            <td>{{ book.authors }}</td>
-            <td>
-                <button ng-click="deleteBook(book.id)">Usuń</button>
-            </td>
-            <td>
-                <button ng-click="changeBookTitle(book.id)">Zmien tytul</button>
-            </td>
-        </tr>
-    </table>
-</section>
+		<table>
+			<tr>
+				<th>Id</th>
+				<th>Title</th>
+				<th>Authors</th>
+				<th>Delete</th>
+				<th>Change title</th>
+			</tr>
+			<tr ng-repeat="book in books">
+				<td>{{ book.id }}</td>
+				<td>{{ book.title }}</td>
+				<td>{{ book.authors }}</td>
+				<td><button class="btn btn-danger" type="button"
+						ng-click="deleteBook(book.id)">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button></td>
+				<td><button class="btn btn-success" type="button"
+						ng-click="changeBookTitle(book.id)">
+						<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+					</button></td>
+			</tr>
+		</table>
+	</section>
 </body>
 </html>

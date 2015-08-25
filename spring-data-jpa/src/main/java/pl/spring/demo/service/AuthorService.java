@@ -2,8 +2,8 @@ package pl.spring.demo.service;
 
 import java.util.List;
 
-import pl.spring.demo.entity.AuthorEntity;
+import pl.spring.demo.to.AuthorTo;
 
 public interface AuthorService {
-	List<AuthorEntity> findAllAuthors();
+	List<AuthorTo> findAllAuthors();
 }

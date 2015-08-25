@@ -7,17 +7,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import pl.spring.demo.entity.AuthorEntity;
 import pl.spring.demo.service.AuthorService;
+import pl.spring.demo.to.AuthorTo;
 
-@RestController(value = "/rest")
+@RestController
+@RequestMapping(value="/authors")
 public class AuthorRestService {
 
 	@Autowired
 	private AuthorService authorService;
 	
 	@RequestMapping(value = "/author", method = RequestMethod.GET)
-	public List<AuthorEntity> findAllAuthors(){
+	public List<AuthorTo> findAllAuthors(){
 		return authorService.findAllAuthors();
 	}
 	

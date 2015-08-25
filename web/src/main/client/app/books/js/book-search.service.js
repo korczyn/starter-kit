@@ -10,6 +10,9 @@ angular.module('app.books').factory('bookService', function (bookRestService) {
         },
         changeBookTitle: function (bookId, titlePrefix) {
         	return bookRestService.changeBookTitle(bookId, titlePrefix);
+        },
+        addBook: function (json) {
+        	return bookRestService.addBook(json);
         }
     };
 });

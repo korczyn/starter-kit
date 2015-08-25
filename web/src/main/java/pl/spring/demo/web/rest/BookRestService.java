@@ -8,7 +8,8 @@ import pl.spring.demo.to.BookTo;
 
 import java.util.List;
 
-@RestController(value = "/rest")
+@RestController
+@RequestMapping(value="/books")
 public class BookRestService {
 
     @Autowired
@@ -22,7 +23,7 @@ public class BookRestService {
         return bookService.findBooksByTitle(titlePrefix);
     }
 
-    @RequestMapping(value = "/book", method = RequestMethod.POST)
+    @RequestMapping(value = "/addBook", method = RequestMethod.POST)
     public BookTo saveBook(@RequestBody BookTo book) {
         return bookService.saveBook(book);
     }

@@ -1,7 +1,9 @@
 package pl.spring.demo.mapper;
 
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import pl.spring.demo.entity.AuthorEntity;
@@ -19,7 +21,7 @@ public class BookMapper {
 
     public static BookEntity map(BookTo bookTo) {
         if (bookTo != null) {
-            return new BookEntity(bookTo.getId(), bookTo.getTitle());
+            return new BookEntity(bookTo.getId(), bookTo.getTitle(), mapAuthors(bookTo.getAuthors()));
         }
         return null;
     }
@@ -38,5 +40,15 @@ public class BookMapper {
                     (", "));
         }
         return null;
+    }
+    
+    static Set<AuthorEntity> mapAuthors(String authors){
+    	Set<AuthorEntity> authorEntities = new HashSet<AuthorEntity>();
+    	String[] auths = authors.split(", ");
+    	for(int i = 0; i < auths.length; i++){
+    		String[] author = auths[i].split(" ");
+    		authorEntities.add(new AuthorEntity(null, author[0], author[1]));
+    	}
+    	return authorEntities;
     }
 }
