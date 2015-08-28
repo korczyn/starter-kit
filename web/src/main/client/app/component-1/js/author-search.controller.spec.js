@@ -20,7 +20,7 @@ describe('author controller', function () {
     }));
     
     
-    it('find authors should call authorService.search', inject(function ($controller, $q, authorService){
+    it('find authors should call authorService.search and succeed', inject(function ($controller, $q, authorService){
     	$controller('AuthorSearchController', {$scope: $scope});
     	$scope.authors = [];
     	var deferred = $q.defer();

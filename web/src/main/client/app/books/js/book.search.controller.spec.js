@@ -15,6 +15,29 @@ describe('book controller', function () {
     beforeEach(inject(function ($rootScope) {
         $scope = $rootScope.$new();
     }));
+    
+    
+    it('changeTitleById should change title in scope.books', function ($controller) {
+    	//given
+    	$controller('BookSearchController', {$scope: $scope});
+    	$scope.books = [{id: 1, title: 'jeden', authors: []}];
+    	//when
+    	$scope.changeTitleById(1, 'konik');
+    	//then
+    	expect($scope.books[0].title).toBe('konik');
+    	
+    });
+
+    it('addBookToScope should add book to scope.books', function ($controller) {
+    	//given
+    	$controller('BookSearchController', {$scope: $scope});
+    	$scope.books = [];
+    	//when
+    	$scope.addBookToScope(1, 'konik', 'marek lol');
+    	//then
+    	expect($scope.books.length).toBe(1);
+    	expect($scope.books[0].title).toBe('konik');
+    });
 
     it('search is defined', inject(function ($controller) {
         // when
@@ -82,37 +105,73 @@ describe('book controller', function () {
     	expect($scope.books.length).toBe(2);
     }));
     
-    it('change title should call bookService.changeBookTitle', inject(function ($controller, $q, bookService){
+    it('change title should call bookService.changeBookTitle', inject(function ($modal, $controller, $q, bookService){
     	//given
-    	$controller('BookSearchController', {$scope: $scope});
+    	$controller('BookSearchController', {$scope: $scope, $modal: $modal});
     	var bookId = 1;
-    	$scope.books = [{id: bookId, title: 'Pierwsza'}];
+    	var bookTitle = 'Pierwsza';
+    	$scope.books = [];
+    	var book = {id: bookId, title: bookTitle};
+    	var newTitle = 'ddd';
+    	$scope.books.push(book);
     	var changeDeferred = $q.defer();
-//    	$httpBackend.whenGET('books/html/book-modal.html').respond('nowa');
     	spyOn(bookService, 'changeBookTitle').and.returnValue(changeDeferred.promise);
+    	
+    	var modalInstance = {
+    			result: {
+    				then: function() {
+    					bookService.changeBookTitle(book.id, newTitle).then(function () {
+    						for (var i = 0; i < $scope.books.length; i = i + 1) {
+    				    		if($scope.books[i].id === bookId){
+    				    			$scope.books[i].title = newTitle;
+    				    			break;
+    				    		}
+    				    	}
+    					});
+    				}
+    			}
+    	};
+    	spyOn($modal, 'open').and.returnValue(modalInstance);
+    	
     	//when
-    	bookService.changeBookTitle(bookId);
-//    	changeDeferred.resolve(bookId, 'nowa');
-    	changeDeferred.resolve({data: {id: bookId, title: 'nowa', authors: []}});
+    	$scope.changeBookTitle(bookId, 'ddd');
+    	changeDeferred.resolve();
     	$scope.$digest();
     	//then
-    	expect(bookService.changeBookTitle).toHaveBeenCalledWith(bookId);
+    	expect(bookService.changeBookTitle).toHaveBeenCalledWith(bookId, 'ddd');
+    	expect($scope.books[0].title).toBe(newTitle);
     	
     }));
    
-    it('add book should call bookService.addBook', inject(function ($controller, $q, bookService){
+    it('add book should call bookService.addBook', inject(function ($modal, $controller, $q, bookService){
     	//given
-    	$controller('BookSearchController', {$scope: $scope});
-    	var bookId = 1;
+    	$controller('BookSearchController', {$scope: $scope, $modal: $modal});
+    	var bookTitle = 'Pierwsza';
     	$scope.books = [];
+    	var book = {title: bookTitle, authors: []};
     	var addDeferred = $q.defer();
     	spyOn(bookService, 'addBook').and.returnValue(addDeferred.promise);
-//    	
-    	bookService.addBook(bookId);
-    	addDeferred.resolve({data: {id: bookId, title: 'Pierwsza', authors: []}});
-    	$scope.$digest();
     	
-    	expect(bookService.addBook).toHaveBeenCalledWith(bookId);
+    	var text = '{ "title":"' + bookTitle + '", "authors": []}';
+		var obj = JSON.parse(text);
+    	
+    	var modalInstance = {
+    			result: {
+    				then: function() {
+    					bookService.addBook(book).then(function () {
+    						$scope.books.push(book);
+    					});
+    				}
+    			}
+    	};
+    	spyOn($modal, 'open').and.returnValue(modalInstance);
+    	
+    	//when
+    	$scope.addBook();
+    	addDeferred.resolve();
+    	$scope.$digest();
+    	//then
+    	expect(bookService.addBook).toHaveBeenCalledWith(obj);
 //    	
     }));
 });
